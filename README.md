@@ -4,10 +4,16 @@ Self-Driving Car Engineer Nanodegree Program
 ### Build + Run Instructions.
 
 To Build execute the following commands in the root directory...
-> cmake .
-> make
+```
+cmake .
+make
+```
+
 To Run execute the following commands in the root directory...
-> ./path_planning
+
+```
+./path_planning
+```
 
 ### Reflection
 
