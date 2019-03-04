@@ -20,12 +20,19 @@ This attempt at completing the path planning project is built ontop of the metho
 
 An additional discrete state machine was employed to control lane changes:
 
->IF The ego car is too close to the closes car in the lane:
->   _Slow Down_
->   IF A left lane exists AND There is not a vehicle in the left lane behind the ego car that is moving faster AND there is not a vehicle in the left lane ahead of the ego car that is moving slower than the ego car :
->      _Move over to the left lane_
->   ELSE IF a right lane exists AND There is not a vehicle in the right lane behind the ego car that is moving faster AND there is not a vehicle in the right lane ahead of the ego car that is moving slower than the ego car :
->      _Move Over to the right lane_
+
+IF The ego car is too close to the closes car in the lane:
+
+   _Slow Down_ 
+   
+   IF A left lane exists AND There is not a vehicle in the left lane behind the ego car that is moving faster AND there is not a vehicle in the left lane ahead of the ego car that is moving slower than the ego car :
+   
+      _Move over to the left lane_
+      
+   ELSE IF a right lane exists AND There is not a vehicle in the right lane behind the ego car that is moving faster AND there is not a vehicle in the right lane ahead of the ego car that is moving slower than the ego car :
+   
+      _Move Over to the right lane_
+
       
 While simple, this state machine does a good enough job to meet the project requrement
 Additonal improvements that I would consider adding if time allowed:
